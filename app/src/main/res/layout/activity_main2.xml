@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.jiangtao.chargeup.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+        <com.example.jiangtao.chargeup.UI.TheFirstView
+            android:id="@+id/theFirstView"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="3">
+
+        </com.example.jiangtao.chargeup.UI.TheFirstView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.example.jiangtao.chargeup.UI.TheSecondView
+                android:id="@+id/theSecondView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/languages"/>
+
+        </LinearLayout>
+        <com.example.jiangtao.chargeup.UI.TheThirdView
+            android:id="@+id/horse"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_weight="6">
+
+        </com.example.jiangtao.chargeup.UI.TheThirdView>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
